@@ -1,0 +1,2 @@
+# homebrew-resonate
+brew installation
