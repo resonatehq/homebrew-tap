@@ -1,2 +1,4 @@
 # homebrew-resonate
-brew installation
+```
+brew install resonatehq/tap/resonate
+```
