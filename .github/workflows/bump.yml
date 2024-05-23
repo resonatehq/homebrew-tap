@@ -24,7 +24,7 @@ jobs:
 
       - name: Verify formula
         run: |
-          brew install --build-from-source Formula/resonate.rb
+          brew install --build-from-source Formula/resonate.rb && resonate -h
 
       - name: Push changes
         uses: ad-m/github-push-action@v0.8.0
