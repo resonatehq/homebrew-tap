@@ -1,5 +1,5 @@
 class Resonate < Formula
-  version '0.5.5'
+  version '0.5.6'
   desc "A dead simple programming model for the cloud"
   homepage "https://github.com/resonatehq/resonate"
   license "Apache-2.0"
@@ -8,18 +8,18 @@ class Resonate < Formula
   if OS.mac?
       if Hardware::CPU.arm?
           url "https://github.com/resonatehq/resonate/releases/download/v#{version}/resonate_darwin_aarch64.tar.gz"
-          sha256 "e55db38e9f619d3997ec850efe192d881900a9e0747990dfca2ead06a9e262b4"
+          sha256 "6414a50ea8da37fae3b6cfcb0ad8fc8f08aa3d3f4b0993403ab11f2b0b0102d0"
       else
           url "https://github.com/resonatehq/resonate/releases/download/v#{version}/resonate_darwin_x86_64.tar.gz"
-          sha256 "a3295f8e3d0d13d4bbdf9d7eb39a873056b8e5895dc8cb05cdf00fc55ada758a"
+          sha256 "2e849678508e2c1f853b0a0065d65d60da8e69ef551ef655159b884e8c69d3c7"
       end
   elsif OS.linux?
      if Hardware::CPU.arm?
          url "https://github.com/resonatehq/resonate/releases/download/v#{version}/resonate_linux_aarch64.tar.gz"
-         sha256 "38d6911623ca85dcda0897e8e2f8c447fcfc6d8e4abd49f7cfcf5a957876d56f"
+         sha256 "6112997409baad64ff599c02b9b7e0b96aaa56a0707f93a023b6f011b84a662a"
      else
          url "https://github.com/resonatehq/resonate/releases/download/v#{version}/resonate_linux_x86_64.tar.gz"
-         sha256 "0344e36de9b2175f36e64d5d734eb7bdba6c950fde2c5c9ce201a783aeffd582"
+         sha256 "e02cb4acb19e6f1b0ce6ebc2872a38549f49a7750bbc5cc0d839e7842abca1f2"
      end
   end
 
