@@ -24,7 +24,7 @@ class Resonate < Formula
   end
 
   def install
-    bin.install Dir["resonate"]
+    bin.install "resonate"
   end
 
   test do
