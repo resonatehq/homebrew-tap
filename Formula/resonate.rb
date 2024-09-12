@@ -8,7 +8,7 @@ class Resonate < Formula
   if OS.mac?
       if Hardware::CPU.arm?
           url "https://github.com/resonatehq/resonate/releases/download/v#{version}/resonate_darwin_aarch64.tar.gz"
-          sha256 "13241be8945289fc85c8f0ece90da2425ec49a560f38d54575f50ca53a92eda6"
+          sha256 "f50a8961977b54eaf7b17b10c3c17006002ecd29698b9f1d98da2d1fb586b005"
       else
           url "https://github.com/resonatehq/resonate/releases/download/v#{version}/resonate_darwin_x86_64.tar.gz"
           sha256 "b4773d6b9ed25e45e03c431d0cfc14daeb9852d3fcbb3e78ed788fcfe7b56ff4"
