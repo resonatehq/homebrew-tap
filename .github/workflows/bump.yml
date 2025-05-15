@@ -8,7 +8,7 @@ jobs:
   release:
     permissions:
       contents: write
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -18,9 +18,11 @@ jobs:
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
+      - name: Make script executable
+        run: chmod +x ./release/release.sh
+
       - name: Run release script
-        run: |
-          ./release/release.sh
+        run: ./release/release.sh
 
       - name: Verify formula
         run: |
