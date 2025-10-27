@@ -1,4 +1,5 @@
 set -euo pipefail
+set -x
 
 version=$(curl --silent --location --fail https://api.github.com/repos/resonatehq/resonate/releases/latest | grep '^  "name"' | awk '{print $2}' | tr -d '"v,')
 echo "bumping to latest version found: ${version}"
