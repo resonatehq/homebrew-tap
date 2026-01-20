@@ -25,9 +25,11 @@ class Resonate < Formula
 
   def install
     bin.install "resonate"
+    bin.install_symlink "resonate" => "r8n"
   end
 
   test do
     shell_output("resonate -h")
+    shell_output("r8n -h")
   end
 end
