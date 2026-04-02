@@ -2,8 +2,6 @@ class Resonate < Formula
   version '0.8.2'
   desc "A dead simple programming model for the cloud"
   homepage "https://github.com/resonatehq/resonate"
-  license "Apache-2.0"
-
   arch = Hardware::CPU.arch.to_s
   if OS.mac?
       if Hardware::CPU.arm?
